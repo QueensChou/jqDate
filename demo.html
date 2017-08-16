@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jq日期选择插件</title>
+		<link rel="stylesheet" href="css/ui.css" />
+	</head>
+	<body>
+		<!--html部分引用开始，其中date1类名可修改，修改后对应js中同时修改-->
+		<div class="date  date1">
+			<a href="###" class="date_select">
+				<span class="date_value"></span>
+				<i class="date_icon"></i>
+			</a>
+			<div class="date_calendar">
+				<div class="date_choose clearfix">
+					<p class="date_year fl">
+						<a href="###" class="arrow_prev"></a>
+						<span class="date_year_value"></span>
+						<a href="###" class="arrow_next"></a>
+					</p>
+					<p class="date_month fr">
+						<a href="###" class="arrow_prev"></a>
+						<span class="date_month_value"></span>
+						<a href="###" class="arrow_next"></a>
+					</p>
+				</div>
+				<table class="date_days">
+					<thead class="date_days_week">
+						<tr>
+							<th>日</th>
+							<th>一</th>
+							<th>二</th>
+							<th>三</th>
+							<th>四</th>
+							<th>五</th>
+							<th>六</th>
+						</tr>
+					</thead>
+					<tbody class="date_days_list">
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!--html部分结束-->
+		
+		<!--js引用部分开始-->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script type="text/javascript" src="js/ui.js" ></script>
+		<script>
+			/*参数说明：
+				1）可设置初始日期（默认系统当前日期）：
+					ThisYear  初始年份
+					ThisMonth 初始月份
+					ThisDay   初始日
+				2）可设置超过系统当前日期是否可选（默认false可选）：
+					ThanDay   true代表不可选
+			*/
+		   	$(".date1").dateSelect({
+		   		ThisYear : 2014,
+				ThisMonth : 10,
+				ThisDay : 1,
+				ThanDay : true
+		   	});
+		</script>
+		<!--js引用部分结束-->
+	</body>
+</html>

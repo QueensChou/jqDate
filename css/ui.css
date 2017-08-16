@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{color:#0f1922;background:#fff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,figure,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0; font-family:"微软雅黑",Arial, Helvetica, sans-serif;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img,li{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit; outline: none;}
+legend{color:#000;}
+a{ text-decoration:none; font-family:"微软雅黑"; color:#39c0c2;}
+
+.clearfix:after{ content: ""; display: block; clear: both;}
+.fl{ float: left;}
+.fr{ float: right;}
+
+/*日历*/
+.date{ width: 172px; position: relative;}
+.date_select{ display: inline-block; width: 150px; padding: 0 10px; height: 30px; line-height: 30px; border: 1px solid #96ACBE; color: #0F1922; font-size: 14px; position: relative;}
+.date_select:hover{ border-color: #39C0C2;}
+.date_icon{ display: inline-block; position: absolute; top: 50%; right: 10px; margin-top: -10px; width: 20px; height: 20px; background: url(../img/date_icon1.png) no-repeat;}
+.date_select_on{ border-color: #39C0C2;}
+.date_select_on .date_icon{ background-image: url(../img/date_icon2.png);}
+.date_calendar{ width: 300px; padding-bottom: 4px; position: absolute; top: 100%; right: 0; margin-top: 2px; border: 2px solid #39C0C2; background-color: #fff; display: none; z-index: 999;}
+.date_choose{ height: 46px; line-height: 46px; padding: 0 18px; border-bottom: 1px solid #F4F5F6;}
+.date_month_value{ display: inline-block; width: 40px; text-align: center;}
+.date_year_value{ display: inline-block; width: 56px; text-align: center;}
+.date_days{ text-align: center; margin: 0 auto; color: #96ACBE;}
+.date_days_week th,.date_days_list td{ width: 40px; text-align: center; height: 36px; line-height: 36px; font-size: 14px;}
+.date_days_list td{ font-size: 12px; cursor: pointer;}
+.date_days_list td.day_select{ background: url(../img/date_calendar.png) no-repeat -151px 7px; color: #fff;}
+.date_days_list td.day_gray{ color: #ccc; cursor: default;}
+.arrow_prev,.arrow_next{ display: inline-block; width: 22px; height: 22px; background: url(../img/date_calendar.png) no-repeat 0 0; vertical-align: middle; margin: 0 4px; margin-top: -3px;}
+.arrow_next{ background-position: -40px 0;}
+.arrow_prev:hover{ background-position: -80px 0;}
+.arrow_next:hover{ background-position: -120px 0;}
